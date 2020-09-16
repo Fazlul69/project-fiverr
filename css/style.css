@@ -1,0 +1,349 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 75%; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.appiontment__section {
+  background-image: url(../img/background-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  /*--//calender_overlay--*/
+  /*--//form overlay*/
+  /*--//membership overlay--*/
+  /*--//footer-logo--*/ }
+  .appiontment__section .header {
+    padding-top: 2rem;
+    color: #1b1b1b; }
+    .appiontment__section .header h1 {
+      font-weight: 700; }
+  .appiontment__section .card--img {
+    transform: translateY(60%);
+    -webkit-transform: translateY(60%);
+    -moz-transform: translateY(60%);
+    -ms-transform: translateY(60%);
+    -o-transform: translateY(60%); }
+  .appiontment__section .calender--overlay {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: rgba(240, 196, 3, 0.8);
+    transform: translateY(5%);
+    position: relative;
+    -webkit-transform: translateY(5%);
+    -moz-transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -o-transform: translateY(5%);
+    /*--//time_box--*/ }
+    .appiontment__section .calender--overlay .logo {
+      position: absolute;
+      top: 0%;
+      left: 3.5%;
+      display: block; }
+    .appiontment__section .calender--overlay .date-picker {
+      padding-left: 2rem; }
+      .appiontment__section .calender--overlay .date-picker .header {
+        margin-top: 3rem; }
+      .appiontment__section .calender--overlay .date-picker .time-box {
+        margin-top: 1rem; }
+        .appiontment__section .calender--overlay .date-picker .time-box .clock {
+          width: 2rem; }
+        .appiontment__section .calender--overlay .date-picker .time-box span {
+          font-size: 1rem;
+          font-weight: 500;
+          margin-top: 1rem;
+          vertical-align: baseline; }
+      .appiontment__section .calender--overlay .date-picker #datepicker2 {
+        border: none;
+        background: transparent;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        color: #ffffff; }
+      .appiontment__section .calender--overlay .date-picker .ui-widget.ui-widget-content {
+        border: none;
+        width: 25rem;
+        background: transparent;
+        margin-top: 2rem; }
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-title {
+        line-height: 1.8em;
+        text-align: center;
+        font-size: 1.4rem;
+        background: transparent; }
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-header {
+        position: relative;
+        padding: .2em 0;
+        background: transparent; }
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-prev span,
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-next span {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -8px;
+        top: 50%;
+        margin-top: -2px; }
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-prev span:hover,
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker .ui-datepicker-next span:hover {
+        background: transparent; }
+      .appiontment__section .calender--overlay .date-picker .ui-datepicker td {
+        border: 0;
+        padding: 6px; }
+      .appiontment__section .calender--overlay .date-picker .ui-state-default, .appiontment__section .calender--overlay .date-picker .ui-widget-content .ui-state-default {
+        border: none;
+        background: transparent;
+        font-weight: normal;
+        color: #454545;
+        font-size: 1.4rem; }
+  .appiontment__section .form--overlay {
+    padding: 2rem;
+    /*--//input--*/ }
+    .appiontment__section .form--overlay .input-box {
+      position: relative;
+      height: 3.5rem;
+      margin-top: 1.2rem; }
+      .appiontment__section .form--overlay .input-box .input {
+        width: 100%;
+        height: 100%;
+        font-size: 1.3rem;
+        border: 0;
+        color: #ffffff;
+        background: transparent; }
+      .appiontment__section .form--overlay .input-box .input:focus {
+        outline: none;
+        box-shadow: none; }
+      .appiontment__section .form--overlay .input-box .lable {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #ffffff;
+        pointer-events: none; }
+      .appiontment__section .form--overlay .input-box .lable-name {
+        font-size: 1.3rem;
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        color: #ffffff;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease; }
+      .appiontment__section .form--overlay .input-box .input:focus + .lable .lable-name,
+      .appiontment__section .form--overlay .input-box .input:valid + .lable .lable-name {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        color: #454545; }
+      .appiontment__section .form--overlay .input-box .input:focus + .lable {
+        border-bottom-color: #333333; }
+      .appiontment__section .form--overlay .input-box select.form-control {
+        border: none;
+        border-bottom: 1px solid #ffff;
+        width: 100%;
+        height: 3rem;
+        border-radius: 0%;
+        -webkit-border-radius: 0%;
+        -moz-border-radius: 0%;
+        -ms-border-radius: 0%;
+        -o-border-radius: 0%;
+        padding-left: 0;
+        background: url(../img/down-arrow1.png) no-repeat right;
+        appearance: none;
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        background-position-x: 94%; }
+      .appiontment__section .form--overlay .input-box select.form-control:focus {
+        outline: none;
+        box-shadow: none; }
+    .appiontment__section .form--overlay .btn-submit {
+      font-size: 1.4rem;
+      padding: .3rem 2rem;
+      background: #f5f7f7;
+      margin-top: 3rem;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+      transition: all .6s ease;
+      -webkit-transition: all .6s ease;
+      -moz-transition: all .6s ease;
+      -ms-transition: all .6s ease;
+      -o-transition: all .6s ease; }
+    .appiontment__section .form--overlay .btn-submit:hover {
+      background: rgba(240, 196, 3, 0.8);
+      color: #ffffff; }
+  .appiontment__section .membership--overlay {
+    margin: auto;
+    width: 80%;
+    padding-top: 1rem; }
+    .appiontment__section .membership--overlay .logo {
+      position: absolute;
+      top: 1%;
+      left: 3%; }
+    .appiontment__section .membership--overlay h1 {
+      margin-top: 3rem; }
+    .appiontment__section .membership--overlay h1::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #000;
+      width: 30%;
+      margin: auto;
+      margin-bottom: 2rem;
+      margin-top: .5rem; }
+    .appiontment__section .membership--overlay img {
+      padding: 0 2px;
+      justify-items: center;
+      border-radius: .5rem;
+      -webkit-border-radius: .5rem;
+      -moz-border-radius: .5rem;
+      -ms-border-radius: .5rem;
+      -o-border-radius: .5rem; }
+    .appiontment__section .membership--overlay p {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-top: .6rem; }
+    .appiontment__section .membership--overlay .form-check-label {
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 1.3rem; }
+  .appiontment__section .membership--overlay::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(240, 196, 3, 0.747);
+    margin: auto;
+    margin-top: 1rem; }
+  .appiontment__section .title {
+    margin-top: 6%;
+    font-weight: 500;
+    font-size: 1.4rem; }
+  .appiontment__section .qr-code-box {
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
+    transform: translateX(-15%);
+    -webkit-transform: translateX(-15%);
+    -moz-transform: translateX(-15%);
+    -ms-transform: translateX(-15%);
+    -o-transform: translateX(-15%); }
+    .appiontment__section .qr-code-box .qr-code-logo {
+      width: 9rem; }
+    .appiontment__section .qr-code-box p {
+      color: #ffffff; }
+  .appiontment__section .button-group {
+    margin-top: 1rem;
+    text-align: center; }
+    .appiontment__section .button-group .offer-btn {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      background: #0a945a;
+      color: #ffffff;
+      padding: .4rem 1rem;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+      margin: 0 .4rem;
+      font-weight: 500; }
+  .appiontment__section .footer-logo {
+    margin-top: 2rem;
+    color: #ffffff; }
+    .appiontment__section .footer-logo h2 {
+      margin-top: 1rem; }
+      .appiontment__section .footer-logo h2 span {
+        vertical-align: top;
+        font-size: 1rem; }
+    .appiontment__section .footer-logo h5 {
+      font-weight: 400;
+      font-size: 1.4rem;
+      padding-bottom: 5rem; }
+    .appiontment__section .footer-logo .img {
+      background-image: url(../img/attachment_56673030.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 8vh;
+      width: 12rem;
+      background-size: 20rem;
+      position: absolute;
+      bottom: 3%;
+      right: 12%; }
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .appiontment__section .calender--overlay .logo {
+    left: 2.2%; }
+
+  .appiontment__section .calender--overlay .date-picker {
+    padding-left: 20%; }
+
+  .appiontment__section .title {
+    margin-top: 9%; }
+
+  .appiontment__section .button-group .offer-btn {
+    margin-top: 1rem; } }
+@media (min-width: 576px) and (max-width: 767.99px) {
+  html {
+    font-size: 70%; }
+
+  .appiontment__section .membership--overlay h1 {
+    margin-top: 5rem; }
+
+  .appiontment__section .calender--overlay .logo {
+    left: 3%; }
+
+  .appiontment__section .calender--overlay .date-picker {
+    padding-left: 15%; }
+
+  .appiontment__section .title {
+    margin-top: 12%; }
+
+  .appiontment__section .button-group .offer-btn {
+    margin-top: 1rem; }
+
+  .appiontment__section .qr-code-box {
+    bottom: 1%; }
+
+  .appiontment__section .footer-logo .img {
+    right: 8%; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 65%; }
+
+  .appiontment__section .membership--overlay h1 {
+    margin-top: 6rem; }
+
+  .appiontment__section .calender--overlay .logo {
+    left: 3.7%; }
+
+  .appiontment__section .calender--overlay .date-picker {
+    padding-left: 15%; }
+
+  .appiontment__section .title {
+    margin-top: 12%; }
+
+  .appiontment__section .button-group .offer-btn {
+    margin-top: 1rem; }
+
+  .appiontment__section .qr-code-box {
+    bottom: 1%;
+    left: 5%; }
+
+  .appiontment__section .footer-logo .img {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
